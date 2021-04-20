@@ -72,7 +72,7 @@ const Checkout = () => {
         <Card.Body>
           <Card.Title>Name : {product.name}</Card.Title>
           <Card.Text>
-            Price : {product.price}, Piece : {product.quantity}
+            Price : {product.price}, Weight : {product.quantity}
           </Card.Text>
         </Card.Body>
       </Card>

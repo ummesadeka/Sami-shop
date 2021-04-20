@@ -31,7 +31,7 @@ const Orders = () => {
                 {
                     orders.map(order =>
                         <ListGroup.Item key={order._id}>Product Name : {order.name}
-                            <ListGroup.Item>piece : {order.quantity}</ListGroup.Item>
+                            <ListGroup.Item>Weight : {order.quantity}</ListGroup.Item>
                             <ListGroup.Item>Price : {order.price}</ListGroup.Item>
                             <ListGroup.Item>Date : {new Date(order.checkIn).toDateString('dd/MM/yyyy')}</ListGroup.Item>
                             <ListGroup.Item>Your Email : {order.email}</ListGroup.Item>

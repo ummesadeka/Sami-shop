@@ -5,6 +5,7 @@
     width: 400px;
     background-color:white;
     color: black;
+    box-shadow: 4px 4px 4px gray;
 }
 
 .product img{

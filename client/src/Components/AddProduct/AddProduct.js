@@ -38,8 +38,7 @@ const AddProduct = () => {
 
   const handleImageUpload = product => {
     const imageData = new FormData();
-    // imageData.set('key', 'db2f8d4473a0c0907db12bb86f312a01')
-    imageData.set('key', 'ded3177f68dbc741b397f7dceb81b947')
+    imageData.set('key', 'db2f8d4473a0c0907db12bb86f312a01')
     imageData.append('image', product.target.files[0]);
 
     axios.post('https://api.imgbb.com/1/upload', imageData)
@@ -66,9 +65,9 @@ const AddProduct = () => {
             <br />
             <input className="form-control" name="price" placeholder="price" ref={register} />
             <br />
-            <input className="form-control" name="exampleRequired" type='file' onChange={handleImageUpload} />
+            <input className="form-control"  type='file' onChange={handleImageUpload} />
             <br />
-            {errors.exampleRequired && <span>This field is required</span>}
+           
 
             <input className="btn btn-primary" type="submit" value="Add Product" />
           </form>
